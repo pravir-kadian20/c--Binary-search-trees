@@ -96,7 +96,7 @@ LinkedList flattenTree(node *root){
         left.tail->right=root;
         root->right=right.head;
 
-        l.head=left.head;
+        l.head=root;
         l.tail=right.tail;
         return l;
     }
